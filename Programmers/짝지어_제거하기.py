@@ -16,11 +16,3 @@ def solution(s):
         return 1 # 1을 리턴한다.
     else: # 만약 value가 있다면
         return 0 # 0을 리턴한다.
-
-
-
-
-
-
-
-

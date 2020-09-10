@@ -1,4 +1,3 @@
-
 def solution(s):
     answer = [] #스택을 만들어준다.
     s = list(s) #s를 list를 변환한다.

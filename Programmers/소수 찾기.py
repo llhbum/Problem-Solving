@@ -20,7 +20,7 @@ def solution(numbers):
             j = int(j)
             if sosu(j) == True:
                 answer.append(j)
-    return len(list(set(answer)))
+    return len(set(answer))
 
 # 풀이
 
@@ -44,4 +44,4 @@ def solution(numbers):
             j = int(j) # 정수로 변환후
             if sosu(j) == True: # 소수감별 함수를 불러와 검사후 True이면
                 answer.append(j) #answer리스트에 append시켜준다.
-    return len(list(set(answer))) # 중복값이 발생하므로 set이용 후 len로 개수를 세어서 리턴시킨다.
+    return len(set(answer)) # 중복값이 발생하므로 set이용 후 len로 개수를 세어서 리턴시킨다.

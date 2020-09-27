@@ -40,55 +40,55 @@ def solution(name):
 
     return answer
 #오답
-# def solution(name):
-#     alp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-#     alp = list(alp)
-#     name = list(name)
-#     answer = 0
-#
-#     for i in range(len(name)):
-#         if name[i] == 'A':
-#             pass
-#         else:
-#             for j in range(len(alp)):
-#                 if name[i] == alp[j]:
-#                     print(name[i])
-#                     if j >= 13:
-#                         answer += 26 - j
-#
-#                     else:
-#                         answer += j
-#
-#     notA_list = []
-#     for i in range(len(name)):
-#         if name[i] == 'A':
-#             pass
-#         else:
-#             notA_list.append(i)
-#
-#     while True:
-#         if len(notA_list) < 2:
-#             break
-#         else:
-#             if len(notA_list) == 2:
-#                 answer += 1
-#                 break
-#             else:
-#                 for i in range(len(notA_list)):
-#                     left_ = abs(notA_list[i] - notA_list[i - 1])
-#                     right_ = abs(notA_list[i] - notA_list[i + 1])
-#
-#                     if len(notA_list) == left_ + 1:
-#                         left_ = 1
-#                     if len(notA_list) == right_ + 1:
-#                         right_ = 1
-#
-#                     if left_ < right_:
-#                         answer += left_
-#                         notA_list.pop(i)
-#                         break
-#                     else:
-#                         answer += right_
-#                         notA_list.pop(i)
-#                         break
-#     return answer
+def solution(name):
+    alp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    alp = list(alp)
+    name = list(name)
+    answer = 0
+
+    for i in range(len(name)):
+        if name[i] == 'A':
+            pass
+        else:
+            for j in range(len(alp)):
+                if name[i] == alp[j]:
+                    print(name[i])
+                    if j >= 13:
+                        answer += 26 - j
+
+                    else:
+                        answer += j
+
+    notA_list = []
+    for i in range(len(name)):
+        if name[i] == 'A':
+            pass
+        else:
+            notA_list.append(i)
+
+    while True:
+        if len(notA_list) < 2:
+            break
+        else:
+            if len(notA_list) == 2:
+                answer += 1
+                break
+            else:
+                for i in range(len(notA_list)):
+                    left_ = abs(notA_list[i] - notA_list[i - 1])
+                    right_ = abs(notA_list[i] - notA_list[i + 1])
+
+                    if len(notA_list) == left_ + 1:
+                        left_ = 1
+                    if len(notA_list) == right_ + 1:
+                        right_ = 1
+
+                    if left_ < right_:
+                        answer += left_
+                        notA_list.pop(i)
+                        break
+                    else:
+                        answer += right_
+                        notA_list.pop(i)
+                        break
+    return answer

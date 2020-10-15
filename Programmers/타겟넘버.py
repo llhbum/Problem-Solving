@@ -19,3 +19,15 @@ numbers	target	return
 문제에 나온 예와 같습니다.
 '''
 
+#답
+def solution(numbers, target):
+    sup = [0]
+    for i in numbers:
+        sub = []
+        for j in sup:
+            sub.append(j + i)
+            sub.append(j - i)
+        sup = sub
+    return sup.count(target)
+
+

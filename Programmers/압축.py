@@ -82,9 +82,6 @@ def solution(msg):
 
                     msg = msg[i:]
                     break
-
-
-
     return answer
 
 # 풀이
@@ -107,5 +104,4 @@ def solution(msg):
 
                     msg = msg[i:] # w를 msg에서 제거
                     break # msg에서 alp에 있는 가장 긴 값만 사용할 것이므로 break 종료
-
     return answer

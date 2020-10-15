@@ -38,3 +38,16 @@ if __name__ == '__main__':
     print(a)
 
 
+# 빨리푼 방법
+def solution(phone_book):
+    answer = True
+    phone_book = sorted(phone_book)
+    for i in range(len(phone_book)):
+        for j in range(len(phone_book)):
+            if i >= j:
+                pass
+            else:
+                if phone_book[i] in phone_book[j]:
+                    answer = False
+                    return answer
+    return answer

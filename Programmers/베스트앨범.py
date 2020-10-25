@@ -29,6 +29,7 @@ pop 장르는 3,100회 재생되었으며, pop 노래는 다음과 같습니다.
 따라서 pop 장르의 [4, 1]번 노래를 먼저, classic 장르의 [3, 0]번 노래를 그다음에 수록합니다.
 '''
 
+#오답
 def solution(genres, plays):
     # 1. 장르의 총 재생 횟수 구하기
     setGenres = list(set(genres))

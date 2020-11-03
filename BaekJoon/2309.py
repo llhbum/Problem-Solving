@@ -28,3 +28,18 @@ for n_1 in range(9):
                 else: print(n_list[idx])
             exit()
 
+
+n = 9
+result = []
+tallList = [(int(input)) for _ in range(n)]
+tallList.sort()
+total = sum(tallList)
+for i in range(0, n):
+    for j in range(i + 1, n):
+        if total - tallList[i] - tallList[j] == 100:
+            for k in range(0, n):
+                if i == k or j == k:
+                    continue
+                print(tallList[k])
+            sys.exit(0)
+
